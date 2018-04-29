@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+* {box-sizing: border-box;}
+
+/* Universal Styles */
+
+    /* Body */
+        body {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: auto;
+
+            margin: 0;
+            padding: 0;
+            
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+    
+    /* Navbar */
+        nav {
+            position: fixed;
+
+            min-width: 100%;
+
+            z-index: 10;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            padding: 1rem;
+
+            background-color: #FFFFFF;
+
+            /* 8 dp Shadow */
+            box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 3px rgba(0,0,0,0.12), 0 4px 15px 0 rgba(0,0,0,0.20);
+        }
+
+        /* Logo Styles */
+            .logo {
+                grid-column: 2 / 2;
+
+                justify-self: center;
+                align-self: center;
+            }
+
+        /* Search Bar */
+            .search-bar {
+                grid-column: 3 / 3;
+
+                display: grid; 
+                grid-template-columns: auto 1fr;
+                grid-template-rows: 1fr; 
+            }
+
+            input[type=text] {
+                
+            }
+
+    /* Body Content */ 
+        .body-content {
+            margin-top: 140px;
+            margin-bottom: 140px;
+
+            grid-column: 1 / -1;
+            grid-row: 1 / 1;
+
+            display: grid; 
+            grid-template-columns: 12.5% 75% 12.5%;
+            grid-template-rows: auto; 
+        }

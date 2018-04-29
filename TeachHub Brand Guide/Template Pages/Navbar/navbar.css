@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+* {box-sizing: border-box;}
+
+/* Universal Styles */
+
+    /* Body */
+        body {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: auto;
+
+            margin: 0;
+            padding: 0;
+            
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+    
+    /* Navbar */
+        nav {
+            /* Remove when copying and replace with commented out bit below */
+            grid-column: 1 / -1;
+
+            /* Remove Comment and Grid Positions
+            position: fixed;
+
+            min-width: 100%;
+            */
+
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            padding: 1rem;
+
+            background-color: #FFFFFF;
+
+            /* 8 dp Shadow */
+            box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 3px rgba(0,0,0,0.12), 0 4px 15px 0 rgba(0,0,0,0.20);
+        }
+    
+    /* Navbar Positons on Template Only */
+        .navbar {
+            grid-row: 1 / 1;
+            margin-bottom: 2rem;
+        }
+
+        .navbar-chapter-title {
+            grid-row: 2 / 2;
+            margin-bottom: 2rem;
+        }
+
+        .navbar-chapter-glossary {
+            grid-row: 3 / 3;
+            margin-bottom: 2rem;
+        }
+
+        .navbar-chapter-content {
+            grid-row: 4 / 4;
+            margin-bottom: 2rem;
+        }
+
+    /* Text and Logo Styles */
+        p {
+            align-self: center;
+
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+            font-size: 1rem;
+            color: #E0E0E0;
+
+            padding: 0 1rem 0 0;
+        }
+        .text.left {
+        grid-column: 1 / 2;
+
+            justify-self: flex-start;
+
+            display: grid; 
+            grid-template-columns: auto 1fr;
+        }
+        .text.right {
+            justify-self: flex-end;
+            grid-column: 3 / 3;
+        }
+        .logo {
+            justify-self: center;
+            align-self: center;
+        }
+
+
+
+/* Mobile */
+@media only screen and (max-width: 399px) {}
+
+/* Tablet */ 
+@media only screen and (min-width: 400px) {}
+
+/* Desktop */ 
+@media only screen and (min-width: 1200px) {}

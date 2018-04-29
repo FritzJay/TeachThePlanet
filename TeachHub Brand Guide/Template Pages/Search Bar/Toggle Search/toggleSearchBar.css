@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/* Search Component Grid Styles, Used to Place Form in Position */
+.search-component {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    justify-items: flex-end;
+}
+
+/* Form Position Within Div */ 
+.search-form {
+    grid-column: 1 / -1;
+}
+
+
+/* Makes search bar disappear on start and toggle open/closed */
+#searchBar {
+    display: none;
+}
+
+/* Search Bar Grid Stlyes */
+
+    /*  */
+    .search-input {
+        grid-column: 1 / -1;
+
+        /* Min and Max Width */
+        width: 0px;
+
+        /* Padding and Margin */ 
+        margin: 0 1rem 0 0;
+        padding: 0 0 .25rem 0;
+
+        /* Input Border Line Styles */ 
+        border: none;
+        outline: none;
+        background: transparent;
+        border-bottom: solid 2px rgba(0, 0, 0, 0.25);
+
+        /* Font */ 
+        font-size: 1rem;
+        font-weight: 500;
+
+        /*  Color */
+        /* Animation */
+    }
+
+    .search.close-button {
+        position: absolute;
+        right: 1rem;
+        top: .5rem;
+    }
+
+/* Search Button Icon Styles */ 
+.search {
+    background-color: transparent;
+    border: none;
+
+    vertical-align: middle;
+
+    color: rgba(0, 0, 0, 0.5);
+
+    cursor: pointer;
+}
+
+.search:hover {
+    color: rgba(0, 0, 0, 1)
+}
+
+.search:focus {
+    outline: 0;
+}
+
+.search.button {
+    grid-column: 1 / 1;
+    justify-self: flex-end;
+}

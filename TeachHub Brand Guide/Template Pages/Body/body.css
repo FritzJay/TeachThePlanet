@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {box-sizing: border-box;}
+
+/* Universal Styles */
+
+    /* Body */
+        body {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: auto;
+
+            margin: 0;
+            padding: 0;
+            
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+    
+    /* Navbar */
+        nav {
+            position: fixed;
+            
+            min-width: 100%;
+
+            display: grid;
+
+            color: #FFFFFF;
+        }
+
+
+
+
+/* Mobile */
+@media only screen and (max-width: 399px) {}
+
+/* Tablet */ 
+@media only screen and (min-width: 400px) {}
+
+/* Desktop */ 
+@media only screen and (min-width: 1200px) {}
+
+

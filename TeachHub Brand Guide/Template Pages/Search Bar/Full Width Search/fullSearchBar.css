@@ -1,0 +1,75 @@
+@charset "UTF-8";
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    margin: 0;
+    padding: 0;
+}
+
+/* Places Div In Body */
+.search-component {
+    grid-column: 1 / -1;
+
+    display: grid;
+    background-color: #FFFFFF;
+
+    box-shadow: 0 6px 10px 0px rgba(0,0,0,0.14), 0 1px 18px 0px rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.20); 
+}
+
+/* Places Form In Div */
+.search-form {
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+    padding: 1rem;
+}
+/* Search Bar */
+    /* Sets Search Bar To Be a Grid */
+    .search-bar {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+
+    /* Inherits Position */
+    .search-icon {
+        vertical-align: middle;
+
+        opacity: 0.75;
+    }
+
+    /* Inherits Position */
+    .search-input {
+        vertical-align: middle;
+
+        margin: 0 0 0 1rem;
+
+        /* Input Border Line Styles */ 
+        border: none;
+        outline: none;
+        background: transparent;
+
+        /* Font */ 
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+/* Close Button */
+.close-button {
+    visibility: hidden;
+
+    background-color: transparent;
+    border: none;
+
+    vertical-align: middle;
+
+    color: rgba(0, 0, 0, 0.5);
+
+    cursor: pointer;
+}
+
+.close-button:focus {
+    outline: 0;
+}

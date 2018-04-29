@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Filter Component</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="filterList.css" />
+    <script src="filterList.js"></script>
+
+    <!-- Font Families	-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Seccond Nav -->
+    <!-- Search Bar -->
+    <div class="search-component">
+            <form class="search-form" action="#" autocomplete="off">
+                <div id="searchBar" class="search-bar">
+                    <label><i class="material-icons search-icon">search</i></label>
+                    <input class="search-input" id="inputText" onkeyup="sortItems()" onfocus="showButton()" oninput="checkInput()" type="text" placeholder="Search">
+                </div>
+                <button class="close-button" id="closeButton" onclick="handleClearFunctions()"><i class="material-icons">close</i></button>
+            </form>
+        </div>
+
+        <!-- Body Conent-->
+        <div class="body-content">
+                
+        <!-- Filter Items-->
+        <div class="icon-type-container" id="sectionContainer">
+            <h3 class="icon-type-header">Action</h3>
+            
+            <div class="icon-container">
+                <i class="material-icons md-48 icon">close</i>
+                <p class="icon-name">close</p>
+            </div>
+
+            <div class="icon-container">
+                <i class="material-icons md-48 icon">accessibility</i>
+                <p class="icon-name">accessibility</p>
+            </div>
+
+
+            <div class="icon-container">
+                    <i class="material-icons md-48 icon">card_giftcard</i>
+                    <p class="icon-name">card giftcard</p>
+                </div>
+
+            <div class="icon-container">
+                <i class="material-icons md-48 icon">eject</i>
+                <p class="icon-name">eject</p>
+            </div>
+
+            <div class="icon-container">
+                <i class="material-icons md-48 icon">fingerprint</i>
+                <p class="icon-name">fingerprint</p>
+            </div>
+
+            <div class="icon-container">
+                <i class="material-icons md-48 icon">info</i>
+                <p class="icon-name">info</p>
+            </div>
+
+            <div class="icon-container">
+                <i class="material-icons md-48 icon">opacity</i>
+                <p class="icon-name">opacity</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
