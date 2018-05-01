@@ -44,18 +44,7 @@
                 align-self: center;
             }
 
-        /* Search Bar */
-            .search-bar {
-                grid-column: 3 / 3;
 
-                display: grid; 
-                grid-template-columns: auto 1fr;
-                grid-template-rows: 1fr; 
-            }
-
-            input[type=text] {
-                
-            }
 
     /* Body Content */ 
         .body-content {
