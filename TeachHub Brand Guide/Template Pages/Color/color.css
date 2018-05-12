@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    grid-gap: 1rem;
+}
+.pallete {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    grid-gap: 1rem;
+}
+
+p {
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.color.primary-one {
+    background-color:rgba(234, 67, 53, 1);
+}
+.color.primary-two {
+    background-color: rgba(33, 150, 243, 1);
+}
+.color.primary-three {
+    background-color:rgba(76, 175, 80, 1);
+}
+.color.primary-four {
+    background-color: rgba(255, 193, 7, 1);
+}
+.color.primary-five {
+    background-color: rgba(158, 158, 158, 1);
+}
