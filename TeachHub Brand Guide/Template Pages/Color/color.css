@@ -2,14 +2,23 @@
 
 body {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns:10% 80% 90%;
 
     grid-gap: 1rem;
 }
 .pallete {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
 
+    grid-column: 2 / 2;
+}
+
+.colors-container {
+    grid-row: 3 / 3;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1rem;
 }
 
@@ -22,6 +31,14 @@ p {
     font-size: 2rem;
 }
 
+.line-break {
+    grid-column: 2 / 2;
+
+    border-bottom: solid 2px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Main Color Pallete */
 .color.primary-one {
     background-color:rgba(234, 67, 53, 1);
 }
@@ -36,4 +53,38 @@ p {
 }
 .color.primary-five {
     background-color: rgba(158, 158, 158, 1);
+}
+
+/* Secondary Color Pallete */
+.color.secondary-one {
+    background-color:rgba(235, 86, 39, 1);
+}
+.color.secondary-two {
+    background-color: rgba(42, 85, 107, 1);
+}
+.color.secondary-three {
+    background-color:rgba(101, 169, 149, 1);
+}
+.color.secondary-four {
+    background-color: rgba(254, 196, 53, 1);
+}
+.color.secondary-five {
+    background-color: rgba(242, 239, 241, 1);
+}
+
+/* Pastel Color Pallete */
+.color.pastel-one {
+    background-color:rgba(255, 191, 175, 1);
+}
+.color.pastel-two {
+    background-color: rgba(249, 245, 132, 1);
+}
+.color.pastel-three {
+    background-color:rgba(143, 255, 207, 1);
+}
+.color.pastel-four {
+    background-color: rgba(195, 240, 237, 1);
+}
+.color.pastel-five {
+    background-color: rgba(254, 252, 246, 1);
 }
