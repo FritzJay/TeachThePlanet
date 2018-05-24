@@ -77,13 +77,13 @@ p {
     background-color:rgba(255, 191, 175, 1);
 }
 .color.pastel-two {
-    background-color: rgba(249, 245, 132, 1);
+    background-color:rgba(195, 240, 237, 1); rgba(249, 245, 132, 1);
 }
 .color.pastel-three {
-    background-color:rgba(143, 255, 207, 1);
+    background-color: rgba(143, 255, 207, 1);
 }
 .color.pastel-four {
-    background-color: rgba(195, 240, 237, 1);
+    background-color: rgba(249, 245, 132, 1);
 }
 .color.pastel-five {
     background-color: rgba(254, 252, 246, 1);
