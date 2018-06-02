@@ -26,17 +26,13 @@
         display: none;
     }
 
-    .icon {
-        opacity: 0.5;
-    }
-
     /* Hover Styles */
     .responsive-btn:hover {
         opacity: 1.0;
-    }
 
-    .icon:hover {
-        opacity: 1.0;
+        background-color: #000000;
+
+        color: #FFFFFF;
     }
 }
 
@@ -58,6 +54,15 @@
 
     i.material-icons.icon {
         display: none;
+    }
+
+    /* Hover Styles */
+    .responsive-btn:hover {
+        opacity: 1.0;
+
+        background-color: #000000;
+
+        color: #FFFFFF;
     }
 }
 
