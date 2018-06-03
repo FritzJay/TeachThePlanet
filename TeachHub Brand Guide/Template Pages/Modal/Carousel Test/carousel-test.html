@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="carousel-test.css" />
+    <script src="carousel-test.js"></script>
+
+    <!-- Font Families	-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="modal-overlay">
+        <div class="modal-slides-container">
+                <div class="slide one">
+                    <div class="modal-header">Slide 1</div>
+                    <div class="modal-main"></div>
+                    <div class="modal-footer"></div>
+                    </div>
+
+                    <div class="slide two">
+                    <div class="modal-header">Slide 2</div>
+                    <div class="modal-main"></div>
+                    <div class="modal-footer"></div>
+                </div>
+
+                <div class="slide three">
+                    <div class="modal-header">Slide 3</div>
+                    <div class="modal-main"></div>
+                    <div class="modal-footer"></div>
+                </div>
+
+            <!-- Nav Buttons -->
+            <div class="nav-btns">
+                <a class="prev" onclick="plusSlides(-1)"><i class="material-icons">navigate_before</i></a>
+                <a class="next" onclick="plusSlides(1)"><i class="material-icons">navigate_next</i></a>
+            </div>
+
+            <!-- The dots/circles -->
+            <div class="carousel-nav">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
