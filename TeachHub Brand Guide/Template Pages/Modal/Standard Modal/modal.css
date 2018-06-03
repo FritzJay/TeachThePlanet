@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/*  Universal Styles    */
+    * {box-sizing: border-box;}
+
+    /* The Modal */
+        /*  Modal Background    */
+        .modal-overlay {
+            /*display: none;  Hidden By Default */
+            position: fixed; /* Stay In Place */
+            z-index: 1; /* Sit On Top */
+            left: 0;
+            top: 0; 
+
+            width: 100%; /* Full Width */
+            height: 100%; /* Full Height */
+
+            background-color: rgb(0,0,0); /* Fallback Color */
+            background-color: rgba(1, 0, 0, 0.75); /* Black w/ Opacity */
+            
+            overflow: scroll;
+        }
+
+        /* Modal Card */
+        .modal-content {
+            padding: 0; /* Lets Header Run Full Length/ Set padding on individual divs */
+
+            height: 400px; /* Height Should Be Inherited By Content/ Delete When Implementing */
+
+            border-radius: .5rem;
+
+            background-color: white;
+
+            /* Sets Card Grid */
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: auto;
+        }
+
+/*  Mobile  */
+@media only screen and (max-width: 399px) {
+    /* Modal */
+        /* Modal Content */
+        .modal-content {
+            margin: 10% auto; /* Centers Modal */
+    
+            width: 90%;
+            max-width: 90%; 
+        }
+}
+
+/*  Tablet  */
+@media only screen and (min-width: 400px) {
+    /* Modal */
+    .modal-content {
+        margin: 5% auto; /* Centers Modal */
+
+        width: 80%;
+        max-width: 700px;
+    }
+}
+
+/*  Desktop  */
+@media only screen and (min-width: 1200px) {
+    .modal-content {
+        margin: 5% auto; /* Centers Modal */
+
+        width: 80%;
+        max-width: 700px;
+    }
+}
